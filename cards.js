@@ -30,15 +30,19 @@ const cardTitleElement = document.createElement("h3");
 cardTitleElement.classList.add("card-title");
 const cardAgeElement = document.createElement("p");
 const cardDescElement = document.createElement("p");
+const favoriteMusic = document.createElement("p");
+
 
 //poblar
 cardTitleElement.textContent = USER.username;
 cardAgeElement.textContent = USER.age;
 cardDescElement.textContent = USER.descripcion;
+favoriteMusic.textContent = USER.fav_music.bands;
+
 
 
 //renderizar
 cardImgContainer.appendChild(imageElement);
-card.append(cardTitleElement, cardAgeElement, cardDescElement);
+card.append(cardTitleElement, cardAgeElement, cardDescElement, favoriteMusic);
 
 
