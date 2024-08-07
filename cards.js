@@ -1,6 +1,7 @@
 
 const IMAGE_URL = "https://placehold.co/200";
 
+
 const USER = {
     id: 1,
     username: "MitziGisselle",
@@ -44,5 +45,4 @@ favoriteMusic.textContent = USER.fav_music.bands;
 //renderizar
 cardImgContainer.appendChild(imageElement);
 card.append(cardTitleElement, cardAgeElement, cardDescElement, favoriteMusic);
-
 
